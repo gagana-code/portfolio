@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>Aadhya - Aspiring Software Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('images/profile.jpeg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Skills</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Aadhya S</b></h1>
+    <h3>Aspiring Software Developer</h3>
+    <h6>Email: <a href="mailto:aadhyaDE@gmail.com">aadhyasde@gmail.com</a></h6>
+    <img src="images/profile.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About Me</h2>
+    <hr class="w3-opacity">
+    <p>
+      I am an Integrated BCA-MCA student at <b>Amrita Vishwa Vidyapeetham</b>, passionate about creating innovative solutions 
+      in web and mobile development. As a fresher, I focus on learning new technologies, solving real-world problems, and enhancing 
+      my skill set. My goals include:
+    </p>
+    <ul>
+      <li>Building impactful applications with user-focused designs.</li>
+      <li>Exploring emerging technologies in AI, cloud computing, and mobile platforms.</li>
+      <li>Contributing to collaborative projects that make a difference.</li>
+    </ul>
+    <p>I am eager to start my journey as a developer and bring value through technology.</p>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="w3-padding-32 w3-content" id="projects">
+    <h2>Projects</h2>
+    <hr class="w3-opacity">
+    <div>
+      <h3>1. Portfolio Website</h3>
+      <p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+      <h3>2. Android To-Do List App</h3>
+      <p>Created a feature-rich To-Do List application with reminders and notifications using Java and Android Studio.</p>
+      <h3>3. E-commerce Website</h3>
+      <p>Developed a responsive e-commerce website using Django, integrated with payment gateways and an admin panel.</p>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="w3-content w3-padding-32" id="skills">
+    <h2>Skills</h2>
+    <hr class="w3-opacity">
+    <p class="w3-wide">Python</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%"></div>
+    </div>
+    <p class="w3-wide">Java</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%"></div>
+    </div>
+    <p class="w3-wide">HTML & CSS</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%"></div>
+    </div>
+    <p class="w3-wide">JavaScript</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%"></div>
+    </div>
+    <p class="w3-wide">Android Studio</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%"></div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact">
+    <h2>Contact</h2>
+    <hr class="w3-opacity">
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:aadhyaDE@gmail.com">aadhyasde@gmail.com</a></p>
+    <p><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i> <a href="https://www.linkedin.com/in/aadhya-s-885849339/">LinkedIn</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+    <p>© 2024 Aadhya. All rights reserved.</p>
+  </footer>
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
